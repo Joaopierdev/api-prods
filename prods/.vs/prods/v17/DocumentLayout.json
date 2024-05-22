@@ -1,0 +1,240 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\database\\prodsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\database\\prodsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\endpoints\\categoriasendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\endpoints\\categoriasendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\endpoints\\produtosendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\endpoints\\produtosendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\endpoints\\usuariosendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\endpoints\\usuariosendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\utils\\listapaginada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\utils\\listapaginada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\migrations\\20240522001843_iniciandoestruturabancodedados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\migrations\\20240522001843_iniciandoestruturabancodedados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\appsettings.json",
+              "RelativeDocumentMoniker": "api\\appsettings.json",
+              "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\appsettings.json",
+              "RelativeToolTip": "api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-22T01:44:52.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Program.cs",
+              "RelativeDocumentMoniker": "api\\Program.cs",
+              "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Program.cs",
+              "RelativeToolTip": "api\\Program.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T01:16:58.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ListaPaginada.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Utils\\ListaPaginada.cs",
+              "RelativeDocumentMoniker": "api\\Utils\\ListaPaginada.cs",
+              "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Utils\\ListaPaginada.cs",
+              "RelativeToolTip": "api\\Utils\\ListaPaginada.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T00:45:07.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoriasEndpoint.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Endpoints\\CategoriasEndpoint.cs",
+              "RelativeDocumentMoniker": "api\\Endpoints\\CategoriasEndpoint.cs",
+              "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Endpoints\\CategoriasEndpoint.cs",
+              "RelativeToolTip": "api\\Endpoints\\CategoriasEndpoint.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAgwD0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T00:23:48.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuariosEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Endpoints\\UsuariosEndpoints.cs",
+              "RelativeDocumentMoniker": "api\\Endpoints\\UsuariosEndpoints.cs",
+              "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Endpoints\\UsuariosEndpoints.cs",
+              "RelativeToolTip": "api\\Endpoints\\UsuariosEndpoints.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T00:23:39.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProdutosEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Endpoints\\ProdutosEndpoints.cs",
+              "RelativeDocumentMoniker": "api\\Endpoints\\ProdutosEndpoints.cs",
+              "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Endpoints\\ProdutosEndpoints.cs",
+              "RelativeToolTip": "api\\Endpoints\\ProdutosEndpoints.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwC8AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T00:23:27.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20240522001843_iniciandoEstruturaBancoDeDados.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Migrations\\20240522001843_iniciandoEstruturaBancoDeDados.cs",
+              "RelativeDocumentMoniker": "api\\Migrations\\20240522001843_iniciandoEstruturaBancoDeDados.cs",
+              "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Migrations\\20240522001843_iniciandoEstruturaBancoDeDados.cs",
+              "RelativeToolTip": "api\\Migrations\\20240522001843_iniciandoEstruturaBancoDeDados.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAgwFcAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T00:18:45.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "api\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Models\\Usuario.cs",
+              "RelativeToolTip": "api\\Models\\Usuario.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAkwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T00:11:19.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProdsDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Database\\ProdsDbContext.cs",
+              "RelativeDocumentMoniker": "api\\Database\\ProdsDbContext.cs",
+              "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Database\\ProdsDbContext.cs",
+              "RelativeToolTip": "api\\Database\\ProdsDbContext.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wBsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T00:08:50.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "api.csproj",
+              "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\api.csproj",
+              "RelativeDocumentMoniker": "api\\api.csproj",
+              "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\api.csproj",
+              "RelativeToolTip": "api\\api.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-22T00:06:25.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "api",
+              "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\api.csproj",
+              "RelativeDocumentMoniker": "api\\api.csproj",
+              "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\api.csproj",
+              "RelativeToolTip": "api\\api.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-22T00:06:13.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "api\\Models\\Categoria.cs",
+              "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Models\\Categoria.cs",
+              "RelativeToolTip": "api\\Models\\Categoria.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T00:00:17.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "api\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Models\\Produto.cs",
+              "RelativeToolTip": "api\\Models\\Produto.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowCUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T23:56:33.014Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
