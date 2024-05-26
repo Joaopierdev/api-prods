@@ -24,7 +24,7 @@ namespace api.Endpoints
 
                 if(status is not null)
                 {
-
+                    produtosEncontrados = produtosEncontrados.Where(produto => produto.Status == status);
                 }
                 
                 if(faixapreco is not null)

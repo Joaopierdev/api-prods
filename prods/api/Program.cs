@@ -47,7 +47,7 @@ namespace api
             app.RegistrarEndpointsCategoria();
 
             // Registro dos endpoints de usuarios
-            //app.RegistrarEndpointsUsuario();
+            app.RegistrarEndpointsUsuario();
 
             app.UseCors("PermitirTodasOrigens");
 
