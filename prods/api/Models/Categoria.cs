@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using api.DTOs;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace api.Models
@@ -17,12 +18,16 @@ namespace api.Models
 
         public Categoria() { }
 
-        public Categoria(int id, bool status, string nome, string? descricao)
+        public Categoria(bool status, string nome, string? descricao)
         {
-            Id = id;
             Status = status;
             Nome = nome;
             Descricao = descricao;
+        }
+
+        public CategoriaDtoOutput GetCategoriaDtoOutput()
+        {
+            return new CategoriaDtoOutput(Id, Status, Nome);
         }
     }
 }

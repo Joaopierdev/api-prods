@@ -25,9 +25,8 @@ namespace api.Models
 
         public Produto() { }
 
-        public Produto(int id, bool status, Categoria categoria, string nome, string? descricao, string? image, float price, int estoque)
+        public Produto(bool status, Categoria categoria, string nome, string? descricao, string? image, float price, int estoque)
         {
-            Id = id;
             Status = status;
             Categoria = categoria;
             Nome = nome;

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using api.DTOs;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Globalization;
 
@@ -26,9 +27,8 @@ namespace api.Models
 
         public Usuario() { }
 
-        public Usuario(int id, bool status, string? nome, string? cargo, string apelido, string email, string senha, string? imagem)
+        public Usuario(bool status, string? nome, string? cargo, string apelido, string email, string senha, string? imagem)
         {
-            Id = id;
             Status = status;
             Nome = nome;
             Cargo = cargo;
@@ -36,6 +36,10 @@ namespace api.Models
             Email = email;
             Senha = senha;
             Imagem = imagem;
+        }
+        public UsuarioDtoOutput GetUsuarioDtoOutput()
+        {
+            return new UsuarioDtoOutput(Id, Status, Apelido, Email);
         }
     }
 }

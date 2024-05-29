@@ -1,4 +1,5 @@
 ﻿using api.Database;
+using api.DTOs;
 using api.Models;
 using api.Utils;
 
@@ -22,7 +23,7 @@ namespace api.Endpoints
                     categoriasEncontradas = categoriasEncontradas.Where(categoria => categoria.Status == status);
                 }
 
-                if (string.IsNullOrEmpty(nomeCategoria))
+                if (!string.IsNullOrEmpty(nomeCategoria))
                 {
                     categoriasEncontradas = categoriasEncontradas
                         .Where(categoria => categoria.Nome.Contains(nomeCategoria, StringComparison.OrdinalIgnoreCase));
@@ -33,7 +34,7 @@ namespace api.Endpoints
 
                 // Retorna as categorias filtradas
                 ListaPaginada<Categoria> listaCategorias = new ListaPaginada<Categoria>(categorias, pagina, tamanhoPagina, totalCategorias);
-                return TypedResults.Ok(listaCategorias);
+                return Results.Ok(categoriasEncontradas.Select(u => u.GetCategoriaDtoOutput()).ToList());
 
             }).Produces<ListaPaginada<Categoria>>();
 
@@ -51,21 +52,22 @@ namespace api.Endpoints
                 }
 
                 // Devolve a categoria encontrado
-                return TypedResults.Ok(categoria);
+                return Results.Ok<CategoriaDtoOutput>(categoria.GetCategoriaDtoOutput());
 
-            }).Produces<Categoria>();
+            }).Produces<CategoriaDtoInput>();
 
             // POST     /categorias
-            rotaCategorias.MapPost("/", (ProdsDbContext dbContext, Categoria categoria) =>
+            rotaCategorias.MapPost("/", (ProdsDbContext dbContext, CategoriaDtoInput categoria) =>
             {
-                var novaCategoria = dbContext.Categorias.Add(categoria);
+                Categoria _novaCategoria = categoria.ToCategoria();
+                var novaCategoria = dbContext.Categorias.Add(_novaCategoria);
                 dbContext.SaveChanges();
 
-                return TypedResults.Created($"/produtos/{categoria.Id}", categoria);
-            });
+                return Results.Created<CategoriaDtoOutput>($"/categorias/{novaCategoria.Entity.Id}", novaCategoria.Entity.GetCategoriaDtoOutput());
+            }).Produces<CategoriaDtoOutput>();
 
             // PUT      /categorias/{Id}
-            rotaCategorias.MapPut("/{Id}", (ProdsDbContext dbContext, int Id, Categoria categoria) =>
+            rotaCategorias.MapPut("/{Id}", (ProdsDbContext dbContext, int Id, CategoriaDtoOutput categoria) =>
             {
                 // Encontra a categoria especificado buscando pelo Id enviado
                 Categoria? categoriaEncontrada = dbContext.Categorias.Find(Id);
@@ -76,15 +78,12 @@ namespace api.Endpoints
                     return Results.NotFound();
                 }
 
-                // Mantém o Id da categoria como o Id existente
-                categoria.Id = Id;
-
                 // Atualiza a lista de categorias
                 dbContext.Entry(categoriaEncontrada).CurrentValues.SetValues(categoria);
 
                 // Salva as alterações no banco de dados
                 dbContext.SaveChanges();
-                return TypedResults.NoContent();
+                return Results.NoContent();
 
             });
 
@@ -103,7 +102,7 @@ namespace api.Endpoints
                 dbContext.Categorias.Remove(categoriasEncontradas);
 
                 dbContext.SaveChanges();
-                return TypedResults.NoContent();
+                return Results.NoContent();
 
             });
         }

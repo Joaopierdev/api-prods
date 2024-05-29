@@ -21,6 +21,7 @@ namespace api
                     builder =>
                     {
                         builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+
                     });
             });
 

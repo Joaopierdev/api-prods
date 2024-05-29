@@ -11,8 +11,8 @@ using api.Database;
 namespace api.Migrations
 {
     [DbContext(typeof(ProdsDbContext))]
-    [Migration("20240522010958_alterandoTipoDaVariavelId")]
-    partial class alterandoTipoDaVariavelId
+    [Migration("20240529010902_IniciandoBancoDedados")]
+    partial class IniciandoBancoDedados
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

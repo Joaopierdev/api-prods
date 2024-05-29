@@ -1,4 +1,5 @@
 ﻿using api.Database;
+using api.DTOs;
 using api.Models;
 using api.Utils;
 
@@ -42,7 +43,7 @@ namespace api.Endpoints
 
                 // Retorna os usuarios filtrados
                 ListaPaginada<Usuario> listaUsuarios = new ListaPaginada<Usuario>(usuarios, pagina, tamanhoPagina, totalUsuarios);
-                return TypedResults.Ok(listaUsuarios);
+                return Results.Ok(usuariosEncontrados.Select(u => u.GetUsuarioDtoOutput()).ToList());
 
             }).Produces<ListaPaginada<Usuario>>();
 
@@ -56,26 +57,27 @@ namespace api.Endpoints
                 if (usuario is null)
                 {
                     // Indica que o usuário não foi encontrado
-                    return TypedResults.NotFound();
+                    return Results.NotFound();
                 }
 
                 // Devolve o usuario encontrado
-                return TypedResults.Ok(usuario);
+                return Results.Ok<UsuarioDtoOutput>(usuario.GetUsuarioDtoOutput());
 
-            }).Produces<Usuario>();
+            }).Produces<UsuarioDtoOutput>();
 
 
             // POST     /usuarios
-            rotaUsuarios.MapPost("/", (ProdsDbContext dbContext, Usuario usuario) =>
+            rotaUsuarios.MapPost("/", (ProdsDbContext dbContext, UsuarioDtoInput usuario) =>
             {
-                var novoUsuario = dbContext.Usuarios.Add(usuario);
+                Usuario _novoUsuario = usuario.ToUsuario();
+                var novoUsuario = dbContext.Usuarios.Add(_novoUsuario);
                 dbContext.SaveChanges();
 
-                return TypedResults.Created($"/usuarios/{usuario.Id}", usuario);
-            });
+                return Results.Created<UsuarioDtoOutput>($"/usuarios/{novoUsuario.Entity.Id}", novoUsuario.Entity.GetUsuarioDtoOutput());
+            }).Produces<UsuarioDtoOutput>();
 
             // PUT      /usuarios/{Id}
-            rotaUsuarios.MapPut("/{Id}", (ProdsDbContext dbContext, int Id, Usuario usuario) =>
+            rotaUsuarios.MapPut("/{Id}", (ProdsDbContext dbContext, int Id, UsuarioDtoInput usuario) =>
             {
                 // Encontra o usuario especificado buscando pelo Id enviado
                 Usuario? usuarioEncontrado = dbContext.Usuarios.Find(Id);
@@ -83,18 +85,15 @@ namespace api.Endpoints
                 if (usuarioEncontrado is null)
                 {
                     // Indica que o usuario não foi encontrado
-                    return TypedResults.NotFound();
+                    return Results.NotFound();
                 }
-
-                // Mantém o Id do usuario como o Id existente
-                usuario.Id = Id;
 
                 // Atualiza a lista de usuarios
                 dbContext.Entry(usuarioEncontrado).CurrentValues.SetValues(usuario);
 
                 // Salva as alterações no banco de dados
                 dbContext.SaveChanges();
-                return TypedResults.NoContent();
+                return Results.NoContent();
 
             });
 
@@ -106,14 +105,14 @@ namespace api.Endpoints
                 if (usuariosEncontrados is null)
                 {
                     // Indica que o usuarios não foi encontrado
-                    return TypedResults.NotFound();
+                    return Results.NotFound();
                 }
 
                 // Remove o produto encontrado da lista de filmes
                 dbContext.Usuarios.Remove(usuariosEncontrados);
 
                 dbContext.SaveChanges();
-                return TypedResults.NoContent();
+                return Results.NoContent();
 
             });
 

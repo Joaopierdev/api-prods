@@ -2,10 +2,10 @@
 
 namespace api.DTOs
 {
-    public class UsuarioDtoInput
+    public class ProdutoDtoInput
     {
         public bool Status { get; set; }
-        public string? Nome { get; set; }
+        public string?  { get; set; }
         public string? Cargo { get; set; }
         public string Apelido { get; set; }
         public string Email { get; set; }
@@ -32,4 +32,3 @@ namespace api.DTOs
             this.Email = email;
         }
     }
-}
