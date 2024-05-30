@@ -1,6 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using api.DTOs;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Globalization;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace api.Models
 {
@@ -34,6 +36,10 @@ namespace api.Models
             Image = image;
             Preco = price;
             Estoque = estoque;
+        }
+        public ProdutoDtoOutput GetProdutoDtoOutput()
+        {
+            return new ProdutoDtoOutput(Id, Status, Categoria, Nome, Descricao, Image, Preco, Estoque);
         }
     }
 }

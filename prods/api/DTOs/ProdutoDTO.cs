@@ -1,34 +1,49 @@
 ﻿using api.Models;
+using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
 
 namespace api.DTOs
 {
     public class ProdutoDtoInput
     {
         public bool Status { get; set; }
-        public string?  { get; set; }
-        public string? Cargo { get; set; }
-        public string Apelido { get; set; }
-        public string Email { get; set; }
-        public string Senha { get; set; }
+        public string Nome { get; set; }
+        public string? Descricao { get; set; }
         public string? Imagem { get; set; }
+        public float Preco { get; set; }
+        public int Estoque { get; set; }
 
-        public Usuario ToUsuario()
+        public Produto ToProduto(Categoria categoria)
         {
-            return new Usuario(Status, Nome, Cargo, Apelido, Email, Senha, Imagem);
+            return new Produto(Status, categoria, Nome, Descricao, Imagem, Preco, Estoque);
         }
     }
 
-    public class UsuarioDtoOutput
+    public class ProdutoDtoOutput
     {
         public int Id { get; set; }
         public bool Status { get; set; }
-        public string Apelido { get; set; }
-        public string Email { get; set; }
+        public Categoria Categoria { get; set; }
+        public string Nome { get; set; }
+        public string? Descricao { get; set; }
 
-        public UsuarioDtoOutput(int id, bool status, string apelido, string email)
+        public string? Image { get; set; }
+
+        public float Preco { get; set; }
+
+        public int Estoque { get; set; }
+
+        public ProdutoDtoOutput(int id, bool status, Categoria categoria, string nome, string? descricao, string? image, float preco, int estoque)
         {
             this.Id = id;
-            this.Apelido = apelido;
-            this.Email = email;
+            this.Status = status;
+            this.Categoria = categoria;
+            this.Nome = nome;
+            this.Descricao = descricao;
+            this.Image = image;
+            this.Preco = preco;
+            this.Estoque = estoque;
         }
+        
     }
+}

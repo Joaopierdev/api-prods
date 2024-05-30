@@ -2,6 +2,7 @@
 using api.DTOs;
 using api.Models;
 using api.Utils;
+using Microsoft.EntityFrameworkCore;
 
 namespace api.Endpoints
 {
@@ -36,7 +37,7 @@ namespace api.Endpoints
                 ListaPaginada<Categoria> listaCategorias = new ListaPaginada<Categoria>(categorias, pagina, tamanhoPagina, totalCategorias);
                 return Results.Ok(categoriasEncontradas.Select(u => u.GetCategoriaDtoOutput()).ToList());
 
-            }).Produces<ListaPaginada<Categoria>>();
+            }).Produces<ListaPaginada<CategoriaDtoOutput>>();
 
 
             // GET      /categorias/{Id}
@@ -54,7 +55,7 @@ namespace api.Endpoints
                 // Devolve a categoria encontrado
                 return Results.Ok<CategoriaDtoOutput>(categoria.GetCategoriaDtoOutput());
 
-            }).Produces<CategoriaDtoInput>();
+            }).Produces<CategoriaDtoOutput>();
 
             // POST     /categorias
             rotaCategorias.MapPost("/", (ProdsDbContext dbContext, CategoriaDtoInput categoria) =>
@@ -85,7 +86,7 @@ namespace api.Endpoints
                 dbContext.SaveChanges();
                 return Results.NoContent();
 
-            });
+            }).Produces<CategoriaDtoInput>();
 
             // DELETE   /categorias/{Id}
             rotaCategorias.MapDelete("/{Id}", (ProdsDbContext dbContext, int Id) =>
@@ -104,7 +105,7 @@ namespace api.Endpoints
                 dbContext.SaveChanges();
                 return Results.NoContent();
 
-            });
+            }).Produces<CategoriaDtoOutput>();
         }
     }
 }

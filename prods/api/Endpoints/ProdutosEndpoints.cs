@@ -1,6 +1,8 @@
 ﻿using api.Database;
+using api.DTOs;
 using api.Models;
 using api.Utils;
+using Microsoft.EntityFrameworkCore;
 
 namespace api.Endpoints
 {
@@ -14,7 +16,7 @@ namespace api.Endpoints
             //GET /produtos
             rotaProdutos.MapGet("/", (ProdsDbContext dbContext, string? NomeProduto, int? idCategoria, bool? status, float? faixapreco, int pagina = 1, int tamanhoPagina = 10) =>
             {
-                IEnumerable<Produto> produtosEncontrados = dbContext.Produtos.AsQueryable();
+                IEnumerable<Produto> produtosEncontrados = dbContext.Produtos.Include(produto => produto.Categoria).AsQueryable();
 
                 // Verifica se foi passado o ID da categoria presente no Produto
                 if(idCategoria is not null)
@@ -43,9 +45,9 @@ namespace api.Endpoints
 
                 // Retorna os produtos filtrados
                 ListaPaginada<Produto> listaProdutos = new ListaPaginada<Produto>(produtos, pagina, tamanhoPagina, totalProdutos);
-                return TypedResults.Ok(listaProdutos);
+                return Results.Ok(listaProdutos);
 
-            }).Produces<ListaPaginada<Produto>>();
+            }).Produces<ListaPaginada<ProdutoDtoOutput>>();
 
             // GET      /produtos/{Id}
             rotaProdutos.MapGet("/{Id}", (ProdsDbContext dbContext, int Id) =>
@@ -60,18 +62,28 @@ namespace api.Endpoints
                 }
 
                 // Devolve o produto encontrado
-                return TypedResults.Ok(produto);
+                return Results.Ok(produto);
 
-            }).Produces<Produto>();
+            }).Produces<ProdutoDtoOutput>();
+
 
             // POST     /produtos
-            rotaProdutos.MapPost("/", (ProdsDbContext dbContext, Produto produto) =>
+            rotaProdutos.MapPost("/", (ProdsDbContext dbContext, ProdutoDtoInput produto, int IdCategoria) =>
             {
-                var novoProduto = dbContext.Produtos.Add(produto);
-                dbContext.SaveChanges();
+                Categoria? categoria = dbContext.Categorias.Find(IdCategoria);
 
-                return TypedResults.Created($"/produtos/{produto.Id}", produto);
-            });
+                if (categoria is null)
+                {
+                    return Results.NotFound();
+                }
+
+                Produto _novoProduto = produto.ToProduto(categoria);
+                var novoProduto = dbContext.Produtos.Add(_novoProduto);
+
+                dbContext.SaveChanges();
+                return Results.Created($"/produtos/{novoProduto.Entity.Id}", novoProduto.Entity.GetProdutoDtoOutput());
+
+            }).Produces<ProdutoDtoOutput>();
 
             // PUT      /produtos/{Id}
             rotaProdutos.MapPut("/{Id}", (ProdsDbContext dbContext, int Id, Produto produto) =>
@@ -93,9 +105,9 @@ namespace api.Endpoints
 
                 // Salva as alterações no banco de dados
                 dbContext.SaveChanges();
-                return TypedResults.NoContent();
+                return Results.NoContent();
 
-            });
+            }).Produces<ProdutoDtoOutput>();
 
             // DELETE   /produtos/{Id}
             rotaProdutos.MapDelete("/{Id}", (ProdsDbContext dbContext, int Id) =>
@@ -112,9 +124,9 @@ namespace api.Endpoints
                 dbContext.Produtos.Remove(produtosEncontrados);
 
                 dbContext.SaveChanges();
-                return TypedResults.NoContent();
+                return Results.NoContent();
 
-            });
+            }).Produces<ProdutoDtoOutput>();
 
         }
     }
