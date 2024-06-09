@@ -1,4 +1,5 @@
 ﻿using api.Models;
+using System.Globalization;
 
 namespace api.DTOs
 {
@@ -22,14 +23,21 @@ namespace api.DTOs
     {
         public int Id { get; set; }
         public bool Status { get; set; }
+        public string? Nome { get; set; }
+        public string? Cargo { get; set; }
         public string Apelido { get; set; }
         public string Email { get; set; }
+        public string? Imagem { get; set; }
 
-        public UsuarioDtoOutput(int id, bool status, string apelido, string email)
+        public UsuarioDtoOutput(int id, bool status, string? nome, string? cargo, string apelido, string email, string? imagem)
         {
             this.Id = id;
+            this.Status = status;
+            this.Nome = nome;
+            this.Cargo = cargo;
             this.Apelido = apelido;
             this.Email = email;
+            this.Imagem = imagem;
         }
     }
 }
