@@ -68,9 +68,9 @@ namespace api.Endpoints
 
 
             // POST     /produtos
-            rotaProdutos.MapPost("/", (ProdsDbContext dbContext, ProdutoDtoInput produto, int IdCategoria) =>
+            rotaProdutos.MapPost("/", (ProdsDbContext dbContext, ProdutoDtoInput produto) =>
             {
-                Categoria? categoria = dbContext.Categorias.Find(IdCategoria);
+                Categoria? categoria = dbContext.Categorias.Find(produto.idCategoria);
 
                 if (categoria is null)
                 {
@@ -86,10 +86,11 @@ namespace api.Endpoints
             }).Produces<ProdutoDtoOutput>();
 
             // PUT      /produtos/{Id}
-            rotaProdutos.MapPut("/{Id}", (ProdsDbContext dbContext, int Id, Produto produto) =>
+            rotaProdutos.MapPut("/{Id}", (ProdsDbContext dbContext, int Id, ProdutoDtoInput produto) =>
             {
                 // Encontra o produto especificado buscando pelo Id enviado
                 Produto? produtoEncontrado = dbContext.Produtos.Find(Id);
+                Categoria? categoria = dbContext.Categorias.Find(produto.idCategoria);
 
                 if (produtoEncontrado is null)
                 {
@@ -97,11 +98,13 @@ namespace api.Endpoints
                     return Results.NotFound();
                 }
 
+                Produto _novoProduto = produto.ToProduto(categoria);
+
                 // Mantém o Id do produto como o Id existente
-                produto.Id = Id;
+                _novoProduto.Id = Id;
 
                 // Atualiza a lista de produtos
-                dbContext.Entry(produtoEncontrado).CurrentValues.SetValues(produto);
+                dbContext.Entry(produtoEncontrado).CurrentValues.SetValues(_novoProduto);
 
                 // Salva as alterações no banco de dados
                 dbContext.SaveChanges();

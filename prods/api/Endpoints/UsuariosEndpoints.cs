@@ -28,7 +28,7 @@ namespace api.Endpoints
                 if (!string.IsNullOrEmpty(email))
                 {
                     usuariosEncontrados = usuariosEncontrados.
-                    Where(usuario => usuario.Email == email);
+                    Where(usuario => usuario.Email.Contains(email, StringComparison.OrdinalIgnoreCase));
                 }
 
                 //Verifica se o apelido (usuário) foi passado para busca do usuário

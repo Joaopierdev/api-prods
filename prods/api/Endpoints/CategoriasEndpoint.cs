@@ -35,7 +35,7 @@ namespace api.Endpoints
 
                 // Retorna as categorias filtradas
                 ListaPaginada<Categoria> listaCategorias = new ListaPaginada<Categoria>(categorias, pagina, tamanhoPagina, totalCategorias);
-                return Results.Ok(categoriasEncontradas.Select(u => u.GetCategoriaDtoOutput()).ToList());
+                return Results.Ok(listaCategorias);
 
             }).Produces<ListaPaginada<CategoriaDtoOutput>>();
 

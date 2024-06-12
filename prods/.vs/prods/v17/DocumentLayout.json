@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\dtos\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\dtos\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\endpoints\\categoriasendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\endpoints\\categoriasendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\endpoints\\produtosendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\endpoints\\produtosendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\dtos\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\dtos\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\dtos\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\dtos\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\endpoints\\usuariosendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\endpoints\\usuariosendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\endpoints\\categoriasendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\endpoints\\categoriasendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|c:\\users\\joaop\\documents\\repositorios\\api-prods\\prods\\api\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78195C65-29BE-4B59-8423-B08A0C2F251C}|api\\api.csproj|solutionrelative:api\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,24 +46,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "UsuariosEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Endpoints\\UsuariosEndpoints.cs",
+              "RelativeDocumentMoniker": "api\\Endpoints\\UsuariosEndpoints.cs",
+              "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Endpoints\\UsuariosEndpoints.cs",
+              "RelativeToolTip": "api\\Endpoints\\UsuariosEndpoints.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAgwFgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T00:48:42.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UsuarioDTO.cs",
               "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\DTOs\\UsuarioDTO.cs",
               "RelativeDocumentMoniker": "api\\DTOs\\UsuarioDTO.cs",
               "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\DTOs\\UsuarioDTO.cs",
               "RelativeToolTip": "api\\DTOs\\UsuarioDTO.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAA2wB8AAAB+AAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAywB8AAAB+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T05:17:50.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "api\\Models\\Usuario.cs",
@@ -67,63 +84,62 @@
               "RelativeToolTip": "api\\Models\\Usuario.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAmwC0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T21:40:51.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T21:40:51.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Produto.cs",
               "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Models\\Produto.cs",
               "RelativeDocumentMoniker": "api\\Models\\Produto.cs",
               "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Models\\Produto.cs",
               "RelativeToolTip": "api\\Models\\Produto.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwA0AAAAoAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBUAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T23:20:43.783Z"
+              "WhenOpened": "2024-05-29T23:20:43.783Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ProdutosEndpoints.cs",
               "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Endpoints\\ProdutosEndpoints.cs",
               "RelativeDocumentMoniker": "api\\Endpoints\\ProdutosEndpoints.cs",
               "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Endpoints\\ProdutosEndpoints.cs",
               "RelativeToolTip": "api\\Endpoints\\ProdutosEndpoints.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAgwCUAAAARAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAQwFoAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T23:09:29.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "ProdutoDTO.cs",
               "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\DTOs\\ProdutoDTO.cs",
               "RelativeDocumentMoniker": "api\\DTOs\\ProdutoDTO.cs",
               "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\DTOs\\ProdutoDTO.cs",
               "RelativeToolTip": "api\\DTOs\\ProdutoDTO.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAA4wCoAAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T01:17:28.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "CategoriasEndpoint.cs",
               "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Endpoints\\CategoriasEndpoint.cs",
               "RelativeDocumentMoniker": "api\\Endpoints\\CategoriasEndpoint.cs",
               "ToolTip": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Endpoints\\CategoriasEndpoint.cs",
               "RelativeToolTip": "api\\Endpoints\\CategoriasEndpoint.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwD4AAABDAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T00:06:35.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T00:06:35.425Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "CategoriaDTO.cs",
               "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\DTOs\\CategoriaDTO.cs",
               "RelativeDocumentMoniker": "api\\DTOs\\CategoriaDTO.cs",
@@ -131,11 +147,12 @@
               "RelativeToolTip": "api\\DTOs\\CategoriaDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T00:01:14.718Z"
+              "WhenOpened": "2024-05-29T00:01:14.718Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\joaop\\Documents\\Repositorios\\api-prods\\prods\\api\\Models\\Categoria.cs",
               "RelativeDocumentMoniker": "api\\Models\\Categoria.cs",

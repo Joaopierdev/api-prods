@@ -8,6 +8,7 @@ namespace api.DTOs
     {
         public bool Status { get; set; }
         public string Nome { get; set; }
+        public int idCategoria { get; set; }
         public string? Descricao { get; set; }
         public string? Imagem { get; set; }
         public float Preco { get; set; }
