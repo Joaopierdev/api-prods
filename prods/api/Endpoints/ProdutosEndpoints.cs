@@ -3,6 +3,7 @@ using api.DTOs;
 using api.Models;
 using api.Utils;
 using Microsoft.EntityFrameworkCore;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace api.Endpoints
 {
@@ -92,19 +93,32 @@ namespace api.Endpoints
                 Produto? produtoEncontrado = dbContext.Produtos.Find(Id);
                 Categoria? categoria = dbContext.Categorias.Find(produto.idCategoria);
 
+                Console.Write(categoria.Id);
+
                 if (produtoEncontrado is null)
                 {
                     // Indica que o produto não foi encontrado
                     return Results.NotFound();
                 }
 
-                Produto _novoProduto = produto.ToProduto(categoria);
+                if(categoria is null)
+                {
+                    // Indica que o produto não foi encontrado
+                    return Results.NotFound();
+                }
 
-                // Mantém o Id do produto como o Id existente
-                _novoProduto.Id = Id;
+                //Produto NovoProduto = produto.ToProduto(categoria);
+
+                produtoEncontrado.Nome = produto.Nome;
+                produtoEncontrado.Categoria = categoria;
+                produtoEncontrado.Status = produto.Status;
+                produtoEncontrado.Categoria = categoria;
+                produtoEncontrado.Descricao = produto.Descricao;
+                produtoEncontrado.Preco = produto.Preco;
+                produtoEncontrado.Estoque = produto.Estoque;
 
                 // Atualiza a lista de produtos
-                dbContext.Entry(produtoEncontrado).CurrentValues.SetValues(_novoProduto);
+                // dbContext.Entry(produtoEncontrado).CurrentValues.SetValues(novoProduto);
 
                 // Salva as alterações no banco de dados
                 dbContext.SaveChanges();

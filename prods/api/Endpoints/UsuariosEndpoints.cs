@@ -88,8 +88,12 @@ namespace api.Endpoints
                     return Results.NotFound();
                 }
 
+                Usuario novoUsuario = usuario.ToUsuario();
+
+                novoUsuario.Id = Id;
+
                 // Atualiza a lista de usuarios
-                dbContext.Entry(usuarioEncontrado).CurrentValues.SetValues(usuario);
+                dbContext.Entry(usuarioEncontrado).CurrentValues.SetValues(novoUsuario);
 
                 // Salva as alterações no banco de dados
                 dbContext.SaveChanges();

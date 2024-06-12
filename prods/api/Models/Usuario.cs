@@ -39,7 +39,7 @@ namespace api.Models
         }
         public UsuarioDtoOutput GetUsuarioDtoOutput()
         {
-            return new UsuarioDtoOutput(Id, Status, Nome, Cargo, Apelido, Email, Imagem);
+            return new UsuarioDtoOutput(Id, Status, Nome, Cargo, Apelido, Email, Senha, Imagem);
         }
     }
 }

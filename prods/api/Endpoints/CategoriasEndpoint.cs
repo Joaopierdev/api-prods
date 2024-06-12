@@ -68,7 +68,7 @@ namespace api.Endpoints
             }).Produces<CategoriaDtoOutput>();
 
             // PUT      /categorias/{Id}
-            rotaCategorias.MapPut("/{Id}", (ProdsDbContext dbContext, int Id, CategoriaDtoOutput categoria) =>
+            rotaCategorias.MapPut("/{Id}", (ProdsDbContext dbContext, int Id, CategoriaDtoInput categoria) =>
             {
                 // Encontra a categoria especificado buscando pelo Id enviado
                 Categoria? categoriaEncontrada = dbContext.Categorias.Find(Id);
@@ -79,8 +79,12 @@ namespace api.Endpoints
                     return Results.NotFound();
                 }
 
+                Categoria novaCategoria = categoria.ToCategoria();
+
+                novaCategoria.Id = Id;
+
                 // Atualiza a lista de categorias
-                dbContext.Entry(categoriaEncontrada).CurrentValues.SetValues(categoria);
+                dbContext.Entry(categoriaEncontrada).CurrentValues.SetValues(novaCategoria);
 
                 // Salva as alterações no banco de dados
                 dbContext.SaveChanges();

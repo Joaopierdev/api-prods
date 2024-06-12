@@ -27,9 +27,10 @@ namespace api.DTOs
         public string? Cargo { get; set; }
         public string Apelido { get; set; }
         public string Email { get; set; }
+        public string Senha { get; set; }
         public string? Imagem { get; set; }
 
-        public UsuarioDtoOutput(int id, bool status, string? nome, string? cargo, string apelido, string email, string? imagem)
+        public UsuarioDtoOutput(int id, bool status, string? nome, string? cargo, string apelido, string email, string senha, string? imagem)
         {
             this.Id = id;
             this.Status = status;
@@ -37,6 +38,7 @@ namespace api.DTOs
             this.Cargo = cargo;
             this.Apelido = apelido;
             this.Email = email;
+            this.Senha = senha;
             this.Imagem = imagem;
         }
     }
